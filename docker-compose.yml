@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+  teamspeak3:
+    restart: always
+    container_name: teamspeak
+    environment:
+      - TS3SERVER_LICENSE=accept
+      - PUID=1000
+      - PGID=1000
+    ports:
+      - "9987:9987/udp"
+      - "30033:30033"
+      - "10011:10011"
+      - "41144:41144"
+    volumes:
+      - "/home/ec2-user/DOCKER/data/teamspeak:/data"
+    image: "chadhutchins182/teamspeak3:latest"
