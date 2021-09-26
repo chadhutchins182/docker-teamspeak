@@ -1,4 +1,5 @@
 FROM alpine:latest
+LABEL org.opencontainers.image.source="https://github.com/chadhutchins182/docker-teamspeak"
 LABEL version="2.0" maintainer="Chad Hutchins <chad@hutchins.house>" 
 
 ENV TS_DIRECTORY=/opt/teamspeak
