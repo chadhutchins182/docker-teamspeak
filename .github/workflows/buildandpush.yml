@@ -9,7 +9,8 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
-permissions: read-all|write-all
+permissions:
+   packages: write
 
 jobs:
   build-and-push-image:
