@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL version="1.0" maintainer="Matt Bentley <mbentley@mbentley.net>" 
+LABEL version="2.0" maintainer="Chad Hutchins <chad@hutchins.house>" 
 
 ENV TS_DIRECTORY=/opt/teamspeak
 
